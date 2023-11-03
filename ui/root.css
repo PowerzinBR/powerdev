@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Poppins:wght@300&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    margin: 0;
+    background-color: #000000;
+    padding: 0;
+}
+
+nav img {
+    width: 25px;
+    margin-left: 20px;
+    height: auto;
+}
+
+.navDisclaimer {
+    list-style: none;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    margin-left: 10rem;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+}
+
+nav {
+    background-color: #1a1a1a;
+    font-size: 10px;
+    box-shadow: 0 2px 4px rgba(20, 19, 19, 0.63);
+    height: 3rem; /* Altura da navegação (aumente conforme necessário) */
+    display: flex;
+    align-items: center;
+}
+
+nav a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Altura da linha (aumente conforme necessário) */
+    background-color: #ffffff;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav a:hover::before {
+    transform: scaleX(1);
+    left: 0; /* Defina a posição esquerda de volta a 0 para que a barra vá do começo ao fim */
+}
