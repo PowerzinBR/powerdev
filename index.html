@@ -4,23 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="ui/root.css">
+    <link rel="stylesheet" href="ui/sobre-mim.css">
     <title>PowerDev | Front-End & Python Developer</title>
 </head>
 <body>
-    <div class="navROOT">
+    <header>
         <nav>
-            <img src="assets/img/code.svg">
+            <img src="../assets/img/code.svg">
             <ul>
                 <li><a href="portfolio/">Portfólio</a></li>
                 <li><a href="contato/">Contato</a></li>
                 <li><a href="sobre-mim/">Sobre Mim</a></li>
             </ul>
         </nav>
-    </div>
-    <div class="disclaimer">
-        <nav class="navDisclaimer">
-            <li><a href="https://github.com/powerzinbr/">AVISO: O repositório deste site está no Github. </a></li>
-        </nav>
-    </div>
+    </header>
+    <main>
+        <section class="about">
+            <h1>Sobre mim</h1>
+            <p id="typing-text"></p><span class="cursor"></span>
+        </section>
+    </main>
+    <footer>
+        <p><a href="https://github.com/powerzinbr/">AVISO: O repositório deste site está no Github.</a></p>
+    </footer>
+    <script src="utils/type.js"></script>
 </body>
 </html>
